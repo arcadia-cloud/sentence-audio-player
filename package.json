@@ -1,0 +1,41 @@
+{
+  "name": "listening-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local English listening study workbench",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:debug": "electron . --remote-debugging-port=9222",
+    "dist": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "com.listeningstudio.app",
+    "productName": "Listening Studio",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**",
+      "backend/**",
+      "frontend/**",
+      "package.json",
+      "!**/__pycache__/**",
+      "!data/**"
+    ],
+    "asarUnpack": [
+      "backend/**",
+      "frontend/**"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^45.0.0"
+  }
+}

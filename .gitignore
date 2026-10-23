@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+config.json
+clip.mp3
+ui*.png
+*.log
+
+# build output and large bundled assets
+dist/
+dist-console/
+build/
+build-console/
+node_modules/
+.electron-cache/
+.npm-cache/
+.electron-profile/
+.edge-profile/
+.edge-app-profile/
+packaging/assets/
+packaging/testdata*/
+packaging/*.log
+*.zip
+*.wav
