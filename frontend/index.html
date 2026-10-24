@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listening Studio</title>
+  <link rel="stylesheet" href="/static/style.css?v=19">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" id="brand">Listening<span>Studio</span></div>
+    <div class="top-meta" id="top-meta"></div>
+    <select id="theme" class="theme-select" title="主题">
+      <option value="auto">跟随系统</option>
+      <option value="light">浅色</option>
+      <option value="dark">深色</option>
+    </select>
+  </header>
+  <main id="app"></main>
+  <div id="toast" class="toast"></div>
+  <audio id="audio" preload="auto"></audio>
+  <script type="module" src="/static/app.js?v=19"></script>
+</body>
+</html>
